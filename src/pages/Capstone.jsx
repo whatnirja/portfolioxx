@@ -223,15 +223,18 @@ export default function Capstone() {
             <hr className="term-div" />
             <div className="wf-grid">
               {[
-                { title: 'Onboarding & Login',   desc: 'Role selection, MFA flow, profile setup' },
-                { title: 'Care Group Dashboard', desc: 'Active care groups, member list, activity feed' },
-                { title: 'Appointment Tracker',  desc: 'Calendar view, task filters by category' },
-                { title: 'Medication Monitor',   desc: 'Dosage schedule, check-off, missed alerts' },
-                { title: 'Financial Reports',    desc: 'Expense log, contribution tracker, PDF export' },
-                { title: 'SOS Alert Screen',     desc: 'One-tap emergency alert with GPS push' },
+                { title: 'Onboarding & Login',   desc: 'Role selection, MFA flow, profile setup', img: 'public/User Profile.png' },
+                { title: 'Care Group Dashboard', desc: 'Active care groups, member list, activity feed', img: 'public/dashboard_ elder 1.2a.png' },
+                { title: 'Appointment Tracker',  desc: 'Calendar view, task filters by category', img: 'public/Create Appointments.png' },
+                { title: 'Medication Monitor',   desc: 'Dosage schedule, check-off, missed alerts', img: 'public/Screenshot 2026-03-22 at 10.07.24 PM.png' },
+                { title: 'Financial Reports',    desc: 'Expense log, contribution tracker, PDF export', img: 'public/Financial.png' },
+                { title: 'SOS Alert Screen',     desc: 'One-tap emergency alert with GPS push', img: 'public/dashboard_ elder 1.2a-2.png' },
               ].map(w => (
                 <div key={w.title} className="wf-card">
-                  <div className="wf-screen">[MOCK]</div>
+                  {w.img
+                    ? <img src={w.img} alt={w.title} style={{ width:'100%', height:64, objectFit:'cover', display:'block', border:'1px solid var(--pink-border)', marginBottom:12, opacity:0.85 }} />
+                    : <div className="wf-screen">[MOCK]</div>
+                  }
                   <div className="wf-title">{w.title.toUpperCase()}</div>
                   <div className="wf-desc">{w.desc}</div>
                 </div>
