@@ -1,11 +1,20 @@
 import { useState } from 'react'
+import { useForm } from '@formspree/react'
 import ScrollReveal from '../components/ScrollReveal'
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
   const [sent, setSent] = useState(false)
+  const [state, handleSubmit] = useForm("mwvwkgve")
+
   const set = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const submit = () => { if (form.name && form.email && form.message) setSent(true) }
+
+  const submit = async (e) => {
+    e.preventDefault()
+    if (!form.name || !form.email || !form.message) return
+    await handleSubmit(e)
+    setSent(true)
+  }
 
   return (
     <div className="page">
@@ -19,9 +28,6 @@ export default function Contact() {
         <div className="contact-layout">
           <ScrollReveal delay={80}>
             <div>
-              {/* <div style={{ fontFamily: 'var(--font-display)', fontSize: 32, color: 'var(--pink)', textShadow: 'var(--glow-text-lg)', marginBottom: 16, letterSpacing: 1 }}>
-                INITIATE_TRANSMISSION
-              </div> */}
               <p className="term-p" style={{ marginBottom: 28 }}>
                 Currently completing my Computer Programming and Analysis diploma and actively
                 seeking software developer opportunities for 2026. Open to roles, projects, and
@@ -55,7 +61,7 @@ export default function Contact() {
             <div className="contact-form-box">
               <div className="cfb-bar">// SEND_MESSAGE.FORM</div>
               <div className="cfb-body">
-                {sent ? (
+                {sent || state.succeeded ? (
                   <div style={{ textAlign: 'center', padding: '36px 0' }}>
                     <div style={{ fontFamily: 'var(--font-display)', fontSize: 48, color: 'var(--pink)', textShadow: 'var(--glow-text-lg)', marginBottom: 12 }}>
                       TRANSMITTED.
@@ -65,7 +71,7 @@ export default function Contact() {
                     </p>
                   </div>
                 ) : (
-                  <>
+                  <form onSubmit={submit}>
                     <div className="form-row">
                       <label className="form-lbl">SENDER_NAME</label>
                       <input className="form-in" type="text" name="name" placeholder="your name" value={form.name} onChange={set} />
@@ -82,10 +88,10 @@ export default function Contact() {
                       <label className="form-lbl">MESSAGE</label>
                       <textarea className="form-ta" name="message" placeholder="> Begin message transmission..." value={form.message} onChange={set} />
                     </div>
-                    <button className="btn" onClick={submit} style={{ width: '100%', justifyContent: 'center' }}>
-                      TRANSMIT MESSAGE
+                    <button className="btn" type="submit" disabled={state.submitting} style={{ width: '100%', justifyContent: 'center' }}>
+                      {state.submitting ? 'TRANSMITTING...' : 'TRANSMIT MESSAGE'}
                     </button>
-                  </>
+                  </form>
                 )}
               </div>
             </div>
