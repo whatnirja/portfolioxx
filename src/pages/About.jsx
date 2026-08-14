@@ -1,8 +1,5 @@
 import ScrollReveal from '../components/ScrollReveal'
 
-const CAT_PORTRAIT = `
-`
-
 const skills = [
   { name: 'RESTful API Design',    pct: 90 },
   { name: 'Java / Spring Boot',    pct: 88 },
@@ -12,16 +9,6 @@ const skills = [
   { name: 'Docker / DevOps',       pct: 76 },
 ]
 
-const courses = [
-  { code: 'COMP3095', name: 'Advanced Web Dev (Java)' },
-  { code: 'COMP3078', name: 'Portfolio Development' },
-  { code: 'COMP3122', name: 'Applied Data Science' },
-  { code: 'COMP3134', name: 'Intro to Cybersecurity' },
-  { code: 'COMP3123', name: 'Full Stack Web Dev' },
-  { code: 'COMP2084', name: 'Server-Side Dev (.NET)' },
-  { code: 'COMP2068', name: 'Server-Side Scripting' },
-  { code: 'COMP2160', name: 'Advanced Programming' },
-]
 
 export default function About() {
   return (
@@ -84,9 +71,54 @@ export default function About() {
             </div>
           </ScrollReveal>
 
-          {/* Right: bio text panels */}
+          {/* Right: links + tags */}
           <div>
 
+            <ScrollReveal delay={120}>
+              <div className="term-panel" style={{ marginBottom: 16 }}>
+                <div className="term-panel-bar">
+                  <span>// LINKS.TXT</span>
+                  <div className="dots">
+                    <span className="dot" /><span className="dot" /><span className="dot" />
+                  </div>
+                </div>
+                <div style={{ padding: 14 }}>
+                  <a
+                    href="https://github.com/whatnirja"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="c-item"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <span className="c-key">GITHUB</span>
+                    <span>github.com/whatnirja</span>
+                  </a>
+
+                  <a
+                    href='../../public/files/Nirja Dabhi - 2025.pdf'
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="c-item"
+                    style={{ textDecoration: 'none'}}
+                  >
+                    <span className="c-key">RESUME</span>
+                    <span>click here to download</span>
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/in/nirjadabhi0912/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="c-item"
+                    style={{ textDecoration: 'none', marginBottom: 0 }}
+                  >
+                    <span className="c-key">LINKEDIN</span>
+                    <span>linkedin.com/in/nirjadabhi</span>
+                  </a>
+
+                </div>
+              </div>
+            </ScrollReveal>
 
             <ScrollReveal delay={180}>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>

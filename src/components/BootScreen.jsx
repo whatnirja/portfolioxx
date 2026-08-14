@@ -47,7 +47,6 @@ export default function BootScreen({ onDone }) {
     <div className={`boot-screen${fading ? ' fade-out' : ''}`} onClick={ready ? proceed : undefined}>
       <div className="boot-header">
         <span>NIRJA_DABHI.SYS // PORTFOLIO v2026.1</span>
-        <span>GBC TORONTO // COMP3078</span>
       </div>
 
       <div style={{ flex: 1, overflow: 'hidden' }}>
