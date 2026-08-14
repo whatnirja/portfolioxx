@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import DinoGame from '../components/DinoGame'
 export default function Home() {
   return (
     <div className="home">
@@ -48,9 +47,6 @@ export default function Home() {
               </div>
             </div>
 
-            <div style={{ marginTop: 20 }}>
-              <DinoGame />
-            </div>
           </div>
         </div>
 
