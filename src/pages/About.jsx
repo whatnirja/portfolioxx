@@ -86,63 +86,7 @@ export default function About() {
 
           {/* Right: bio text panels */}
           <div>
-            <ScrollReveal delay={120}>
-              <div className="term-panel" style={{ marginBottom: 16 }}>
-                <div className="term-panel-bar">
-                  <span>// BIO.TXT</span>
-                  <div className="dots">
-                    <span className="dot" /><span className="dot" /><span className="dot" />
-                  </div>
-                </div>
-                <div className="term-panel-content">
-                  <p className="term-p" style={{ marginBottom: 12 }}>
-                    I'm <span style={{ color: 'var(--pink)' }}>Nirja Dabhi</span> — a Computer Programming
-                    and Analysis student at George Brown College, graduating 2026 with a 3.83 GPA.
-                    I specialize in backend systems, RESTful API development, and production-grade
-                    application design.
-                  </p>
-                  <p className="term-p" style={{ marginBottom: 12 }}>
-                    I thrive where reliability matters — fintech, automation, healthcare software —
-                    places where a well-designed service contract is a promise to someone depending
-                    on what you built. I'm drawn to hard debugging sessions, clean API contracts,
-                    and systems that communicate clearly when things go wrong.
-                  </p>
-                  <p className="term-p">
-                    Outside of class I competed in <span style={{ color: 'var(--pink)' }}>IEEEXtreme</span> (ranked
-                    <span style={{ color: 'var(--pink)' }}> 17th in Canada</span>), tutored fellow
-                    students through Java and Python challenges, and shipped real fixes to a
-                    production hackathon platform at HuskyHacks.
-                  </p>
-                </div>
-              </div>
-            </ScrollReveal>
 
-            <ScrollReveal delay={160}>
-              <div className="term-panel" style={{ marginBottom: 16 }}>
-                <div className="term-panel-bar">
-                  <span>// CAREER_STATEMENT.TXT</span>
-                  <div className="dots">
-                    <span className="dot" /><span className="dot" /><span className="dot" />
-                  </div>
-                </div>
-                <div className="term-panel-content">
-                  <p className="term-p" style={{ color: 'var(--pink-pale)', marginBottom: 10, fontSize: 12 }}>
-                    "WE ARE THE FACILITATORS OF OUR OWN CREATIVE EVOLUTION."
-                  </p>
-                  <p className="term-p" style={{ marginBottom: 10 }}>
-                    I believe software development is fundamentally an act of empathy. Every
-                    well-validated endpoint, every graceful error response, every thoughtfully
-                    designed service contract is a promise kept to someone who depends on what you built.
-                  </p>
-                  <p className="term-p">
-                    My goal is to grow into a developer who builds systems that are not just functional
-                    but trustworthy — systems that scale, communicate clearly when things go wrong, and
-                    hold up under pressure. I see every bug fixed as a lesson, every code review as a
-                    conversation.
-                  </p>
-                </div>
-              </div>
-            </ScrollReveal>
 
             <ScrollReveal delay={180}>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
@@ -170,7 +114,7 @@ export default function About() {
               </div>
               <div style={{ fontSize: 11, color: 'var(--pink-dim)', letterSpacing: 1 }}>
                 George Brown College · Toronto, Ontario<br />
-                Ontario College Advanced Diploma · Sept 2024 – April 2026
+                Ontario College Advanced Diploma · Jan 2024 – April 2026
               </div>
               <div style={{ display: 'flex', gap: 5, marginTop: 14, flexWrap: 'wrap' }}>
                 {['Software Development','Microservices','Data Science','Cybersecurity'].map(t => (
@@ -179,8 +123,8 @@ export default function About() {
               </div>
             </div>
             <div>
-              <div className="deg-gpa">3.83</div>
-              <div className="deg-gpa-label">CURRENT GPA</div>
+              <div className="deg-gpa">3.84</div>
+              <div className="deg-gpa-label">GPA</div>
             </div>
           </div>
         </ScrollReveal>
@@ -189,7 +133,7 @@ export default function About() {
           <div className="g2" style={{ marginBottom: 32 }}>
             {[
               { label: 'ACHIEVEMENT', title: 'IEEEXtreme Programming — 17th in Canada', desc: 'Competed in the IEEE 24-hour global programming competition placing 17th nationally. Solved complex algorithmic problems spanning data structures, graph theory, and dynamic programming under strict time pressure.' },
-              { label: 'ACADEMIC STANDING', title: 'Consistent High Academic Performance', desc: 'Maintained a 3.83 cumulative GPA throughout the program while balancing production-style project work, peer tutoring responsibilities, and competitive programming participation.' },
+              { label: 'ACADEMIC STANDING', title: 'Consistent High Academic Performance', desc: 'Maintained a 3.84 cumulative GPA throughout the program while balancing production-style project work, peer tutoring responsibilities, and competitive programming participation.' },
             ].map(c => (
               <div key={c.label} className="dossier">
                 <div className="dossier-label"><span>{c.label}</span></div>
@@ -202,17 +146,6 @@ export default function About() {
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={80}>
-          <div style={{ fontSize: 10, letterSpacing: 3, color: 'var(--pink)', marginBottom: 12 }}>// RELEVANT_COURSEWORK</div>
-          <div className="courses-grid">
-            {courses.map(c => (
-              <div key={c.code} className="course-item">
-                <strong>{c.code}</strong>
-                <span>{c.name}</span>
-              </div>
-            ))}
-          </div>
-        </ScrollReveal>
 
         {/* ── Experience ── */}
         <ScrollReveal>

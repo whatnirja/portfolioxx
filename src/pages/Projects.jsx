@@ -8,7 +8,7 @@ const projects = [
     desc: 'Senior care management platform enabling families to coordinate care, track medications and appointments, manage shared expenses, and send SOS emergency alerts. Role-based access for seniors, family members, and caregivers.',
     tags: ['React Native','Spring Boot','MongoDB','OCR','GPS','Role-Based Access'],
     status: '[IN PROGRESS]',
-    link: '/capstone',
+    github: 'https://github.com/whatnirja/pebble',
   },
   {
     id: 'PRJ_001', stack: 'React · Chrome Ext · Supabase · AI',
