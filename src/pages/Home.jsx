@@ -48,30 +48,10 @@ export default function Home() {
               </div>
             </div>
 
-            <div style={{ marginTop: 24, marginBottom: 24, display:   'flex', gap: 12 }}>
-              <a 
-                href="/files/Nirja Dabhi, 2026 - Resume.pdf"
-                download="nirja-dabhi-2026-resume.pdf"
-                className="btn"
-              >
-                Resume
-              </a>
-
-              <a 
-                href="/files/Nirja Dabhi, 2026 - Cover Letter.pdf"
-                download="nirja-dabhi-2026-cover-letter.pdf"
-                className="btn"
-              >
-                Cover Letter
-              </a>
+            <div style={{ marginTop: 20 }}>
+              <DinoGame />
             </div>
-
-            <DinoGame />
-            
           </div>
-          
-
-
         </div>
 
         <div className="home-right">
@@ -83,13 +63,13 @@ export default function Home() {
               </div>
             </div>
             <div className="term-panel-content">
-              <p style={{ fontSize:12, color:'rgba(255,170,204,0.82)', lineHeight:1.8, marginBottom:16, fontFamily:'var(--font-mono)' }}>
+              <p style={{ fontSize:12, color:'rgba(255,214,232,0.82)', lineHeight:1.8, marginBottom:16, fontFamily:'var(--font-mono)' }}>
                 Computer Programming &amp; Analysis student at George Brown
                 College (2026), specializing in backend systems and RESTful
                 API development. I build things that hold up under pressure —
                 fintech, automation, healthcare software.
               </p>
-              <p style={{ fontSize:12, color:'rgba(255,170,204,0.82)', lineHeight:1.8, marginBottom:20, fontFamily:'var(--font-mono)' }}>
+              <p style={{ fontSize:12, color:'rgba(255,214,232,0.82)', lineHeight:1.8, marginBottom:20, fontFamily:'var(--font-mono)' }}>
                 Ranked <span style={{ color:'var(--pink)', textShadow:'var(--glow-text)' }}>17th in Canada</span> in
                 IEEEXtreme Programming. Former peer tutor, current tech
                 developer at HuskyHacks. Java · Spring Boot · Docker · Python · JS.

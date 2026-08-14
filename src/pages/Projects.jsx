@@ -47,27 +47,6 @@ export default function Projects() {
           <hr className="term-div" />
         </ScrollReveal>
 
-        {/* IEEE */}
-        <ScrollReveal delay={80}>
-          <div className="ieee-card">
-            <div className="ieee-num">17<sup>TH</sup></div>
-            <div className="ieee-info">
-              <h3>IEEEXtreme Programming Competition</h3>
-              <p>
-                Ranked <span style={{ color: 'var(--pink)' }}>17th in Canada</span> in the IEEE 24-hour
-                global programming competition. Solved complex algorithmic problems spanning data structures,
-                graph theory, dynamic programming, and combinatorics under strict time pressure — competing
-                against university teams across the country.
-              </p>
-              <div style={{ display: 'flex', gap: 5, flexWrap: 'wrap', marginTop: 14 }}>
-                {['Competitive Programming','Algorithms','Data Structures','24-Hour Competition'].map(t => (
-                  <span key={t} className="tag bright">{t}</span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </ScrollReveal>
-
         <div className="proj-list">
           {projects.map((p, i) => (
             <ScrollReveal key={p.id} delay={i * 70}>
