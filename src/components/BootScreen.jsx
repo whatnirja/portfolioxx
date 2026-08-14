@@ -9,7 +9,7 @@ const LINES = [
   { text: '> LOADING REACT_ROUTER v6.22.0............<span class="ok">[OK]</span>', delay: 1250 },
   { text: '> SCANNING ACADEMIC_RECORDS...............<span class="ok">[FOUND]</span>', delay: 1500 },
   { text: '> LOADING PROJECT_DATA....................<span class="ok">[OK]</span>', delay: 1750 },
-  { text: '> VERIFYING CREDENTIALS...................<span class="ok">[GPA: 3.83]</span>', delay: 2000 },
+  { text: '> VERIFYING CREDENTIALS...................<span class="ok">[GPA: 3.84]</span>', delay: 2000 },
   { text: '> CHECKING COMPETITIVE_RANK...............<span class="ok">[16TH IN CA]</span>', delay: 2250 },
   { text: '> COMPILING PORTFOLIO_MODULES.............<span class="ok">[DONE]</span>', delay: 2500 },
   { text: '', delay: 2750 },

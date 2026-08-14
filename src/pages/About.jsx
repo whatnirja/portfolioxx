@@ -26,6 +26,9 @@ const courses = [
 export default function About() {
   return (
     <div className="page">
+      <div className="frame">
+        <div className="frame-bar">&gt; ABOUT &lt;</div>
+        <div className="frame-body">
       <div className="section">
 
         <ScrollReveal>
@@ -257,7 +260,7 @@ export default function About() {
                   <div style={{ color: 'var(--pink)', fontSize: 11, letterSpacing: 2, marginBottom: 12 }}>{e.role.toUpperCase()}</div>
                   <ul style={{ paddingLeft: 0, listStyle: 'none', marginBottom: 14 }}>
                     {e.bullets.map((b, i) => (
-                      <li key={i} style={{ fontSize: 12, color: 'rgba(255,170,204,0.75)', lineHeight: 1.7, marginBottom: 5 }}>
+                      <li key={i} style={{ fontSize: 12, color: 'rgba(255,214,232,0.75)', lineHeight: 1.7, marginBottom: 5 }}>
                         <span style={{ color: 'var(--pink)', marginRight: 6 }}>{'>'}</span>{b}
                       </li>
                     ))}
@@ -298,6 +301,8 @@ export default function About() {
           </div>
         </ScrollReveal>
 
+      </div>
+      </div>
       </div>
     </div>
   )

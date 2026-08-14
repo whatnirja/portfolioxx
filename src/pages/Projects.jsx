@@ -40,6 +40,9 @@ const projects = [
 export default function Projects() {
   return (
     <div className="page">
+      <div className="frame">
+        <div className="frame-bar">&gt; PROJECTS &lt;</div>
+        <div className="frame-body">
       <div className="section">
         <ScrollReveal>
           <span className="sys-label">03 // Academic Work Experience</span>
@@ -97,6 +100,8 @@ export default function Projects() {
             </ScrollReveal>
           ))}
         </div>
+      </div>
+      </div>
       </div>
     </div>
   )

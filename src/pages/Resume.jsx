@@ -111,7 +111,7 @@ export default function Resume() {
                     <span className="rp-job-date">2024 – 2026</span>
                   </div>
                   <div className="rp-job-co">George Brown College — Toronto, Canada</div>
-                  <p>Ontario College Advanced Diploma · Current GPA: <span style={{ color: 'var(--pink)' }}>3.83</span></p>
+                  <p>Ontario College Advanced Diploma · Current GPA: <span style={{ color: 'var(--pink)' }}>3.4</span></p>
                 </div>
               </div>
 
@@ -140,7 +140,7 @@ export default function Resume() {
                 <p style={{ marginBottom: 20 }}>{'> Dear Hiring Manager,'}</p>
                 <p style={{ marginBottom: 14 }}>
                   I am writing to express my interest in a Software Developer position at your organization.
-                  As a Computer Programming and Analysis student at George Brown College with a 3.83 GPA and
+                  As a Computer Programming and Analysis student at George Brown College with a 3.84 GPA and
                   hands-on experience building production-style backend systems, I am eager to contribute to
                   a team building reliable, scalable software.
                 </p>

@@ -5,7 +5,6 @@ const links = [
   { to: '/',         label: 'HOME'     },
   { to: '/about',    label: 'ABOUT'    },
   { to: '/projects', label: 'PROJECTS' },
-  { to: '/contact',  label: 'CONTACT'  },
 ]
 
 export default function Navbar() {
@@ -29,14 +28,6 @@ export default function Navbar() {
               {l.label}
             </NavLink>
           ))}
-        </div>
-
-        <div className="nav-right">
-          <div className="nav-status">
-            <div className="status-dot" />
-            <span>ONLINE</span>
-          </div>
-          <span>PORT: 3022</span>
         </div>
 
         <button className="hamburger" onClick={() => setOpen(o => !o)} aria-label="Menu">

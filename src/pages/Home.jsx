@@ -4,11 +4,13 @@ export default function Home() {
     <div className="home">
       <div className="home-topbar">
         <span>TORONTO, ONTARIO // <span>STATUS: ACTIVE</span></span>
-        <span>MEM: 3.83 GPA // RANK: 17TH CA</span>
+        <span>MEM: 3.84 GPA // RANK: 17TH CA</span>
       </div>
 
-      {/* Main grid */}
-      <div className="home-grid">
+      <div className="frame">
+        <div className="frame-bar">&gt; HOME &lt;</div>
+
+        <div className="home-grid">
         {/* Left */}
         <div className="home-left">
           <div>
@@ -30,7 +32,7 @@ export default function Home() {
           <div>
             <div className="home-stats">
               <div className="h-stat">
-                <div className="h-stat-val">3.83</div>
+                <div className="h-stat-val">3.84</div>
                 <div className="h-stat-label">GPA</div>
               </div>
               <div className="h-stat">
@@ -46,7 +48,6 @@ export default function Home() {
                 <div className="h-stat-label">Grad</div>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -95,6 +96,7 @@ export default function Home() {
               ))}
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>
