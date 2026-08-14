@@ -95,7 +95,7 @@ export default function About() {
                   </a>
 
                   <a
-                    href='../../public/files/Nirja Dabhi - 2025.pdf'
+                    href='../../public/files/Nirja Dabhi - 2026.pdf'
                     target="_blank"
                     rel="noopener noreferrer"
                     className="c-item"

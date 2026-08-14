@@ -1,15 +1,14 @@
 import { Link } from 'react-router-dom'
 export default function Home() {
   return (
-    <div className="home">
-      <div className="home-topbar">
-        <span>TORONTO, ONTARIO // <span>STATUS: ACTIVE</span></span>
-        <span>MEM: 3.84 GPA // RANK: 17TH CA</span>
-      </div>
-
+    <div className="page">
       <div className="frame">
         <div className="frame-bar">&gt; HOME &lt;</div>
-
+        <div className="frame-subbar">
+          <span>TORONTO, ONTARIO // <span>STATUS: ACTIVE</span></span>
+          <span>MEM: 3.83 GPA // RANK: 17TH CA</span>
+        </div>
+        <div className="frame-body">
         <div className="home-grid">
         {/* Left */}
         <div className="home-left">
@@ -32,7 +31,7 @@ export default function Home() {
           <div>
             <div className="home-stats">
               <div className="h-stat">
-                <div className="h-stat-val">3.84</div>
+                <div className="h-stat-val">3.83</div>
                 <div className="h-stat-label">GPA</div>
               </div>
               <div className="h-stat">
@@ -96,6 +95,7 @@ export default function Home() {
               ))}
             </div>
           </div>
+        </div>
         </div>
         </div>
       </div>
