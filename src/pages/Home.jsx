@@ -6,7 +6,7 @@ export default function Home() {
         <div className="frame-bar">&gt; HOME &lt;</div>
         <div className="frame-subbar">
           <span>TORONTO, ONTARIO // <span>STATUS: ACTIVE</span></span>
-          <span>MEM: 3.83 GPA // RANK: 17TH CA</span>
+          <span>MEM: 3.84 GPA // RANK: 17TH CA</span>
         </div>
         <div className="frame-body">
         <div className="home-grid">
