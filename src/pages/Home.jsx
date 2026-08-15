@@ -29,7 +29,6 @@ export default function Home() {
               STATUS    <span style={{ color: 'var(--pink)', textShadow: 'var(--glow-text)' }}>ACTIVELY SEEKING</span>
             </div>
           </div>
-
           <div>
             <div className="home-stats">
               <div className="h-stat">
@@ -57,6 +56,7 @@ export default function Home() {
             {/* <div className="home-video-wrap">
             <DotVideo src="../../files/movie.mp4" />
           </div> */}
+            
             <div className="term-panel-bar">
               <span>// ABOUT_ME.TXT</span>
               <div className="dots">
