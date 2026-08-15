@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import DotVideo from '../components/DotVideo'
+
 export default function Home() {
   return (
     <div className="page">
@@ -31,7 +33,7 @@ export default function Home() {
           <div>
             <div className="home-stats">
               <div className="h-stat">
-                <div className="h-stat-val">3.83</div>
+                <div className="h-stat-val">3.84</div>
                 <div className="h-stat-label">GPA</div>
               </div>
               <div className="h-stat">
@@ -52,6 +54,9 @@ export default function Home() {
 
         <div className="home-right">
           <div className="term-panel">
+            {/* <div className="home-video-wrap">
+            <DotVideo src="../../files/movie.mp4" />
+          </div> */}
             <div className="term-panel-bar">
               <span>// ABOUT_ME.TXT</span>
               <div className="dots">

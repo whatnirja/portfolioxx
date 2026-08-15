@@ -1087,3 +1087,19 @@ body { animation: flicker 8s ease-in-out infinite; }
   .home-bottom { grid-template-columns: 1fr 1fr; }
   .rp-skills { grid-template-columns: 1fr; }
 }
+
+.home-video-wrap {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+}
+.dot-canvas {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  background: #000;
+}
