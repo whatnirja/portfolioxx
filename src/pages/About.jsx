@@ -56,7 +56,7 @@ export default function About() {
                   ['INCEPT',     '2024 // GBC TORONTO',      false],
                   ['FUNCTION',   'SOFTWARE DEVELOPER',       true ],
                   ['PROGRAM',    'COMP PROGRAMMING + ANAL.', false],
-                  ['GPA',        '3.83 / 4.0',               true ],
+                  ['GPA',        '3.84 / 4.0',               true ],
                   ['IEEE RANK',  '17TH IN CANADA',           true ],
                   ['STATUS',     'ACTIVELY SEEKING',         true ],
                   ['GRAD DATE',  'APRIL 2026',               false],
