@@ -3,15 +3,23 @@ import ScrollReveal from '../components/ScrollReveal'
 
 const projects = [
   {
-    id: 'PRJ_000', stack: 'React Native · Spring Boot · MongoDB',
+    id: 'PRJ_004', stack: 'Python · OpenCV · PyTorch',
+    title: 'Camera Sudoku Solver',
+    desc: 'Real-time Sudoku solver that reads a puzzle through a webcam and overlays the solution live. Custom-trained CNN for digit recognition (combined MNIST + synthetic printed-digit dataset), OpenCV perspective-warp grid detection, and a backtracking solver, with the solved digits rendered back onto the live camera feed via inverse perspective transform.',
+    tags: ['Python','OpenCV','PyTorch','CNN','Computer Vision'],
+    status: '[PROTOTYPE]',
+    github: 'https://github.com/whatnirja/sudoku-solver',
+  },
+  {
+    id: 'PRJ_001', stack: 'React Native · Spring Boot · MongoDB',
     title: 'Pebble - Elderly Care App',
     desc: 'Senior care management platform enabling families to coordinate care, track medications and appointments, manage shared expenses, and send SOS emergency alerts. Role-based access for seniors, family members, and caregivers.',
     tags: ['React Native','Spring Boot','MongoDB','OCR','GPS','Role-Based Access'],
-    status: '[IN PROGRESS]',
+    status: '[PROTOTYPE]',
     github: 'https://github.com/whatnirja/pebble',
   },
   {
-    id: 'PRJ_001', stack: 'React · Chrome Ext · Supabase · AI',
+    id: 'PRJ_002', stack: 'React · Chrome Ext · Supabase · AI',
     title: 'scholarship aggregator',
     desc: 'A React web app and Chrome extension built to help Ontario students understand the real financial impact of OSAP grant cuts. Features an interactive debt calculator, Gemini AI-powered Q&A using OpenRouter embeddings, and Supabase vector search for personalized financial guidance.',
     tags: ['React','Chrome Extension','Supabase','Gemini AI','OpenRouter','TypeScript'],
@@ -20,7 +28,7 @@ const projects = [
     live: 'https://youreindebt.vercel.app/',
   },
   {
-    id: 'PRJ_002', stack: 'Swift · iOS · SQLite · Gov API',
+    id: 'PRJ_003', stack: 'Swift · iOS · SQLite · Gov API',
     title: 'Storm Predictor',
     desc: 'A native iOS application using multi-source data aggregation — historical storm records, live weather feeds, and Government of Canada data — to generate a real-time Storm Risk Index for Ontario locations. Push notifications, multi-city dashboard, province-wide risk map.',
     tags: ['Swift','iOS','SQLite','REST APIs','Predictive Analytics'],
@@ -28,7 +36,7 @@ const projects = [
     github: 'https://github.com/whatnirja/G30-project',
   },
   {
-    id: 'PRJ_003', stack: 'Java · Spring Boot · Docker · DBs',
+    id: 'PRJ_004', stack: 'Java · Spring Boot · Docker · DBs',
     title: 'Student Wellness Hub',
     desc: 'Three-service Spring Boot microservices platform promoting student well-being through resources, goals, and events. Fully containerized with Docker Compose, inter-service REST communication, Redis caching, and verified with TestContainers integration tests.',
     tags: ['Java','Spring Boot','Docker','PostgreSQL','MongoDB','Redis','TestContainers'],
